@@ -1,0 +1,56 @@
+.cube {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 100px;
+    /*preserves the 3D style */
+    transform-style: preserve-3d;
+    /* The perspective property defines how far the object is away from the user.
+    So, a lower value will result in a more intensive 3D effect than a higher value. */
+    perspective: 2000px;
+    transition: all ease-in-out 10s;
+}
+
+.cube:hover{
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)
+}
+
+.face {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transition: all 1s;
+}
+
+.one {
+    background-color: skyblue;
+}
+
+.two {
+    background-color: orange;
+    transform: rotateY(90deg) translateZ(100px) translateX(100px);
+    
+}
+
+.three {
+    background-color: rgb(160, 254, 88);
+    transform: rotateY(90deg) translateZ(-100px) translateX(100px);
+    
+}
+
+.four {
+    background-color: rgb(243, 132, 185);
+    transform:translateZ(-200px) ;
+}
+
+.five {
+    background-color: rgb(249, 255, 162);
+    transform: rotateX(90deg) translateZ(100px) translateY(-100px) ;
+}
+
+.six {
+    background-color: rgb(158, 120, 255);
+    transform: rotateX(90deg) translateZ(-100px) translateY(-100px) ;
+}
