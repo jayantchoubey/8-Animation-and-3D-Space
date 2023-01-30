@@ -2,7 +2,7 @@
     height: 200px;
     width: 200px;
     position: relative;
-    margin: 100px;
+    margin: 200px;
     /*preserves the 3D style */
     transform-style: preserve-3d;
     /* The perspective property defines how far the object is away from the user.
